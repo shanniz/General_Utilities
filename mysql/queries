@@ -1,0 +1,10 @@
+
+#grant all privileges to database
+GRANT ALL PRIVILEGES ON practice_BucketList.* TO sentient_nodejsu@'%' identified by 'password';
+
+#show users;
+select host, user from mysql.user;
+
+#show databases;
+show databases;
+
