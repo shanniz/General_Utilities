@@ -1,6 +1,12 @@
+# create user
+CREATE USER dbadmin@localhost IDENTIFIED BY 'somepassword';
+
+# show grant for the user
+SHOW GRANTS FOR dbadmin@localhost;
 
 #grant all privileges to database
 GRANT ALL PRIVILEGES ON practice_BucketList.* TO sentient_nodejsu@'%' identified by 'password';
+
 
 #show users;
 select host, user from mysql.user;
@@ -13,3 +19,6 @@ mysql -u root -p < englishdictionary.sql
 
 # import database into existing database names Enhancements
 mysql -u root -p Enhancements < Enhancements_backup.sql
+
+
+
