@@ -8,3 +8,8 @@ select host, user from mysql.user;
 #show databases;
 show databases;
 
+# create and import database; script englishdictionary.sql has create database query in begining
+mysql -u root -p < englishdictionary.sql
+
+# import database into existing database names Enhancements
+mysql -u root -p Enhancements < Enhancements_backup.sql
