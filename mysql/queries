@@ -22,3 +22,6 @@ mysql -u root -p Enhancements < Enhancements_backup.sql
 
 #count of reports foreach product
 SELECT product, count(*) as num FROM Enhancements.bug_details3 group by product order by num DESC;
+
+#count of fixed reports by products
+SELECT product, count(*) as num FROM `bug_detailsDictionary` where resolution='fixed' group by product order by num DESC;
