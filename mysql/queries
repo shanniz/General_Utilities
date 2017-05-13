@@ -20,5 +20,5 @@ mysql -u root -p < englishdictionary.sql
 # import database into existing database names Enhancements
 mysql -u root -p Enhancements < Enhancements_backup.sql
 
-
-
+#count of reports foreach product
+SELECT product, count(*) as num FROM Enhancements.bug_details3 group by product order by num DESC;
